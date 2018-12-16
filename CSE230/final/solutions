@@ -1,0 +1,163 @@
+(* 13 fall *)
+let rec insert l i = 
+match l with
+| [] -> []
+| h::t -> if h>=i i::l then h::insert t i
+
+type expr =
+| Var of string
+| Const of int
+| Plus of expr * expr
+
+let rec simpl e = 
+  match e with
+  | Plus(e1,e2) -> 
+  	let e1' = simpl e1 in
+  	let e2' = simpl e2 in
+  	match (e1',e2') with
+  	| (Const a,Const b)-> Const a+b
+  	| _ -> Plus(e1',e2')
+  | _ -> e
+
+def lookup(d,k):
+	return [item[1] for item in d if item[0]==k)
+
+def cond(b, t, f):
+	if b: return t
+	else: return f
+def update(d,k,v):
+	return [(item[0],cond(item[0]==k,v,item[1]) for item in d]
+
+def delete(d,k):
+	return [item for item in d if item[0]!=k]
+
+def add(d,k,v):
+	return d.append((k,v))
+
+def update(d,k,v):
+  res = []
+  for item in d:
+    if item[0] == k:
+      res.append((item[0],v))
+    else:
+      res.append((item[0],item[1]))
+  return res
+
+def in_range(i,range):
+  def decorator(f):
+    def decorated(*args):
+      res = f(*args)
+      if i==-1:
+        if res<range[0]: raise Exception("Return value is too small")
+        elif res>range[1]: raise Exception("Return value is too greater")
+        else: return res
+      else:
+        if args[i]<range[0]: raise Exception()
+        elif args[i]>range[1]: raise Exception()
+        else: return res
+    return decorated
+  return decotator
+
+link(san_diego, seattle).
+link(seattle, dallas).
+link(dallas, new_york).
+link(new_york, chicago).
+link(new_york, seattle).
+link(chicago, boston).
+link(boston, san_diego).
+
+path_2(A,B):- link(A,C),link(C,B).
+path_3(A,B):- link(A,C),path_2(C,B).
+
+path_N(A,B,N):- N=1,link(A,B).
+path_N(A,B,N):- N>1,M is N -1 path_N(A,C,M),link(C,B).
+
+path(A, B) :- path_helper(A, B,[]).
+path_helper(A, B, Seen) :- link(A,B),not(member(B, Seen)).
+path_helper(A, B, Seen) :- link(A,C),not(member(C,Seen)), path_helper(C,B,[C|Seen]).
+
+(* 13 spring *)
+let count f l = 
+  let fold_fn acc elem = 
+    if (f elem) then acc+1 else acc
+  in List.fold_left fold_fn 0 l;;
+
+let stretch l =
+  let fold_fn acc elem = 
+    acc@[elem;elem] in 
+  List.fold_fn fold_fn [] l;;
+
+type ’a tree =
+| Empty
+| Node of ’a * ’a tree list;;
+
+let rec tree_zip t1 t2 =
+  match (t1,t2) with
+  |(Empty,Empty) -> Empty
+  |(Node(r1,l1),Node(r2,l2)) ->
+  List.map (fun (m1, m2) -> tree_zip m1 m2) l
+    let newC = List.map (fun (m1,m2)->tree_zip m1 m2) l in     
+    Node((r1,r2),newC)
+
+zip([],[],[]).
+zip([H1|T1],[H2|T2],[[H1,H2]|R]) :- zip(T1,T2,R).
+
+part([],_,[],[]).
+part([H|T],P,[H|R1],R2) :- H=<P,part(T,P,R1,R2).
+part([H|T],P,R1,[H|R2]) :- H>P,part(T,P,R1,R2).
+qsort([H|T],R) :- 
+part(L,H,L1,L2),qsort(L1,R1),qsort(L2,R2),append(RS1, [H|R2], R).
+append(R1, [H|R2], R).
+
+def rev(l):
+  return [l[i] for i in range(len(l)-1,-1,-1)]
+
+def rev(l):
+  def fold_fn(acc,elm): return [elem]+acc
+  return reduce(fold_fn, l, [])
+
+
+let rec unzip l =
+  match l with
+  | [] -> ([],[])
+  | h::t -> let (e1,e2) = h  in let (l1,l2) = (unzip t) in (e1::l1,e2::l2)
+
+
+
+(*winter 13*)
+let sum_matrix l = 
+  let fold_fn acc elem = 
+    List.fold_left (+) acc elem in
+  List.fold_left fold_fn 0 l;;
+
+remove_all(_,[],[]).
+remove_all(X,[H|T],R) :- X = H,remove_all(X,T,R).
+remove_all(X,[H|T],[H|R]) :- X\=H,remove_all(X,T,R).
+
+remove_first(_,[],[]).
+remove_first(H,[H|T],T).
+remove_first(K,[H|T],[H|R1]) :- K\=H, remove_first(K,T,R1).
+
+prefix([],_).
+prefix([H|T1],[H|T2]) :- prefix(T1,T2).
+
+segment(A,B) :- prefix(A,B).
+segment(A,[_|T]) :- prefix(A,T).
+
+
+def lift_1(f):
+    def decorated(x):
+        return [f(i) for i in x]
+    return decorated
+
+def lift_2(f):
+    def decorated(x,y):
+        return [f(i, j) for (i, j) in zip(x, y)]
+    return decorated
+
+def lift(f):
+    def decorated(*args):
+        return [f(*l) for l in transpose(args)]
+    return decorated
+
+

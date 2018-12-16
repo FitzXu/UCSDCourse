@@ -29,7 +29,7 @@ sorted([_]).
 sorted([A,B|T]) :- A=<B, sorted(T).
 
 
-%sort(L1,L2) :- permutation(L1,P), sorted(P),L2 = P.
+%sort(L1,L2) :- permutation(L1,L2), sorted(L2).
 
 %sort(L1,L2) :- permutation(L1,P), sorted(P),L2 = P,!.
 

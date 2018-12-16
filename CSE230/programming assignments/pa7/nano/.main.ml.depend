@@ -1,0 +1,2 @@
+main.cmo : nanoParse.cmi nano.cmo
+main.cmx : nanoParse.cmx nano.cmx

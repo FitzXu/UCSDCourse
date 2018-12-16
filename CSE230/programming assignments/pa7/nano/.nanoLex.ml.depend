@@ -1,0 +1,2 @@
+nanoLex.cmo : nanoParse.cmi nano.cmo
+nanoLex.cmx : nanoParse.cmx nano.cmx
