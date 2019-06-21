@@ -1,0 +1,8 @@
+
+sudo docker images
+
+docker run -it -p 8889:8888 -v /Users/chenguanghao/Documents/Graduate/UCSDCourse/CSE255/Section1-Spark-Basics:/home/ucsddse230/work ucsddse230/cse255-dse230 /bin/bash
+
+jupyter notebook
+
+

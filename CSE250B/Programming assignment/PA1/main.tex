@@ -1,0 +1,107 @@
+\documentclass{article}
+\usepackage{nips15submit_e, times}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{placeins}
+\usepackage{enumerate}
+\usepackage{diagbox}
+
+
+\title{Prototype selection for nearest neighbor}
+\date{January 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Main idea of prototype selection}
+Since the MNIST dataset is extremely large, it might take too long to classify a query because of the large number of size and dimension. Therefore, we looked for a prototype selection method in this report. First of all, redundancy are filled among the dimensions, which reminds us to process dimension reduction. One of the most common method for dimension reduction is Principal Component Analysis (PCA). In addition, the run time of 1-NN is directly related with the size of dataset, which is the bottle net of the algorithm. Therefore, we attempted to select $M$ samples from the training set to reduce. To be specific, we splitted the training set into 10 cluster according to the label and then for each cluster, we used k-means to further splitted the cluster into $M/10$ sub-clusters. Finally, we obtained $M/10$ centroids which will be the most distinctive representatives for each label and all in all there are $M/10\times 10=M$ samples for training.
+\section{Pseudocode}
+The following table shows the pseudocode of our prototype selection algorithm.
+\begin{algorithm}
+        \caption{Prototype selection algorithm}
+        \begin{algorithmic}[1]
+            \Require train data
+            \Ensure selected prototype (Shape: $M$ samples)
+             \State using PCA to do dimension reduction
+             \State split the training dataset into 10 buckets, meaning 10 labels
+             \State executing k-means to separate data into $M/10$ clustes
+             \State collect $M/10$ centers for each label and it turns out to obtain $M/10\times 10=M$ representatives
+        \end{algorithmic}
+\end{algorithm}
+\section{Experiment}
+In this section, we showed the result of our experiments. First of all, some details about the implementation should be explained. First of all, the distance in our project is shown in Equation (\ref{equation: distance}).
+\begin{equation}
+    \label{equation: distance}
+    \begin{split}
+    L_2(\vec{x},\vec{y}) = \sum_{i=1}^d{(x_i-y_i)^2}
+    \end{split}
+\end{equation}
+The way we used to measure the performance of our approach is using accuracy shown in Equation (\ref{equation: accuracy}).
+\begin{equation}
+    \label{equation: accuracy}
+    \begin{split}
+    \text{Accuracy} = \frac{\text{\#predicted correct}}{\text{\#predicted correct}+\text{\#predicted wrong}}
+    \end{split}
+\end{equation}
+Since the experiment might introduce some errors because of the experimental atmosphere is not always ideal, therefore, we need to conduct the experiments with the same condition for several times. Simultaneously, it is necessary to report the confidence interval of the result. The formula we used to measure the result is in Equation (\ref{equation: confidence})
+\begin{equation}
+    \label{equation: confidence}
+    \begin{split}
+    \text{Confidence Interval} = (\mu - std,\mu + std \frac{\sigma}{\sqrt{n}})
+    \end{split}
+\end{equation}
+So for both prototype selection and random selection, we run the experiment under different value of $M$ for 5 times. And what should be noted that the parameter(dimension after projection) for PCA used in this project is 100.
+\subsection{Comparison with value of $M$}
+ In order to show the performance better, we used a random selection method as comparison. Basically, random selection is to choose $M$ samples from the training set randomly and to use the $M$ samples as training set for 1-NN. The performance of both ptototype selection and random selection are shown in Table 
+(\ref{table: performance}). It is obvious that our prototype model is better than the random selection one. Besides, we also can find that the classification accuracy is increasing when the value of $M$ goes up, which can be intuitive because it contains more information with large value of $M$. 
+\begin{table}[ht]
+\label{table: performance}
+\begin{center}
+\setlength{\tabcolsep}{9mm}
+\begin{tabular}{c|ccc}
+\toprule
+\diagbox{Model}{M}& 1000& 5000& 10000 \\
+\midrule
+Prototype& 95.84\%& 96.90\% &97.16\%\\
+Random&    88.80\%(0.005)& 93.38\%(0.002) &94.87\%(0.002)\\
+\bottomrule
+\end{tabular}
+\caption{Average accuracy result over 5 times of run among different values of $M$. The first row presents the accuracy of our prototype selection model and the second row presents the result of random selection model.}
+\end{center}
+\end{table}
+
+\subsection{Comparison with run time}
+Except comparison the accuracy, we also compared the run time because a better model should be both precise and efficient. From Table (\ref{table: run-time}), we can find our prototype selection takes less time to execute 1-NN. It is reasonable since after transformed by PCA, each item of the sample contains less coordinates, which reduces the time for calculating the distance.
+
+\begin{table}[ht]
+\label{table: run-time}
+\begin{center}
+\setlength{\tabcolsep}{9mm}
+\begin{tabular}{c|ccc}
+\toprule
+\diagbox{Model}{M}& 1000& 5000& 10000 \\
+\midrule
+Prototype Selection&53.94& 308.50&510.44\\
+Random Selection&82.06&477.73&821.00\\
+\bottomrule
+\end{tabular}
+\caption{Average run time over 5 times of run among different values of $M$. The first row presents the run time of our prototype selection model and the second row presents the run time of random selection model.}
+\end{center}
+\end{table}
+
+\section{Evaluation}
+In conclusion, our approach is better than the random one because the prototype samples chosen are distinctive and then the run time is considerable. However, there are still some aspects we can do to improve the model:
+\begin{enumerate}[(1)]
+\item In this project, we reduced dimension of the original training data to be 100 features but the value of it should be appropriately selected. Therefore, we can try to use different parameter for PCA and keep the best one leading to the best performance.
+\item Secondly, in our work, we easily used $L_2$ distance as the metric when executing 1-NN but there're some other choices such as $L_1$ distance, Hamming distance. We ought to compare different distances and find the fitful metric in this case.
+\item Intead of using 1-NN, it might be better to replace 1-NN with k-NN. However, at the same time, a hyper parameter $k$ will be introduced so it should also be fine tuned.
+\end{enumerate}
+
+\end{document}

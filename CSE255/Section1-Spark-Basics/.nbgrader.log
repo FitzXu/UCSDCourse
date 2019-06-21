@@ -1,0 +1,44 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/ucsddse230/work
+[NotebookApp | INFO] 0 active kernels
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://[all ip addresses on your system]:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] 302 GET / (172.17.0.1) 0.70ms
+[NotebookApp | INFO] Writing notebook-signing key to /home/ucsddse230/.local/share/jupyter/notebook_secret
+[NotebookApp | WARNING] Notebook 1.BasicSpark/5.Word Count.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 86417955-43df-4155-943c-57cd9f6c6791
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190419172133 (172.17.0.1) 11.06ms referer=http://localhost:8889/notebooks/1.BasicSpark/5.Word%20Count.ipynb
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 86417955-43df-4155-943c-57cd9f6c6791
+[NotebookApp | INFO] Saving file at /1.BasicSpark/5.Word Count.ipynb
+[NotebookApp | INFO] Saving file at /1.BasicSpark/5.Word Count.ipynb
+[NotebookApp | INFO] Saving file at /1.BasicSpark/5.Word Count.ipynb
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/ucsddse230/work
+[NotebookApp | INFO] 0 active kernels
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://[all ip addresses on your system]:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] Writing notebook-signing key to /home/ucsddse230/.local/share/jupyter/notebook_secret
+[NotebookApp | WARNING] Notebook 1.BasicSpark/5.Word Count.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 41528598-213d-4aeb-b494-373f967b5939
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190419173548 (172.17.0.1) 13.72ms referer=http://localhost:8889/notebooks/1.BasicSpark/5.Word%20Count.ipynb
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 41528598-213d-4aeb-b494-373f967b5939
+[NotebookApp | INFO] Saving file at /1.BasicSpark/5.Word Count.ipynb
+[NotebookApp | INFO] Starting buffering for 41528598-213d-4aeb-b494-373f967b5939:b7df0b4a95094d548f500528499fe110
+[NotebookApp | WARNING] Notebook 1.BasicSpark/6.(key,val) RDD operations.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 8ca5787a-3e69-44d7-a706-f7128af30832
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190419173548 (172.17.0.1) 2.64ms referer=http://localhost:8889/notebooks/1.BasicSpark/6.(key%2Cval)%20RDD%20operations.ipynb
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 8ca5787a-3e69-44d7-a706-f7128af30832
+[NotebookApp | INFO] Saving file at /1.BasicSpark/6.(key,val) RDD operations.ipynb
+[NotebookApp | INFO] Starting buffering for 8ca5787a-3e69-44d7-a706-f7128af30832:116acbfbbbd046638f4a252cfd0a9eb1
+[NotebookApp | WARNING] Notebook 2.SparkSQL/1.SparkSQL.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 4769e5ba-6067-49da-a042-5ae38e34cbe7
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190419173548 (172.17.0.1) 1.96ms referer=http://localhost:8889/notebooks/2.SparkSQL/1.SparkSQL.ipynb
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 4769e5ba-6067-49da-a042-5ae38e34cbe7
+[NotebookApp | INFO] Saving file at /2.SparkSQL/1.SparkSQL.ipynb
+[NotebookApp | INFO] Saving file at /2.SparkSQL/1.SparkSQL.ipynb
+[NotebookApp | INFO] Starting buffering for 4769e5ba-6067-49da-a042-5ae38e34cbe7:db746d2e8a964ea78b44d6fab7bc9564
+[NotebookApp | INFO] interrupted

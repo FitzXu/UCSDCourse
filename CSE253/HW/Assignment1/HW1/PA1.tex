@@ -1,0 +1,209 @@
+\documentclass{article} % For LaTeX2e
+\usepackage{nips15submit_e,times}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+
+
+
+\title{Individual Part for Assignment 1 of CSE253}
+
+\author{
+Guanghao chen \\
+Department of Computer Science\\
+University of California, San Diego\\
+La Jolla, CA 92037 \\
+\texttt{guc001@eng.ucsd.edu}\\
+}
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+\begin{document}
+\maketitle
+\section{Problems from Bishop}
+\subsection{Exercise 1.1}
+Using Equation (1.41) when $\lambda =2$, the LHS of equation (1.42) can be reduced as
+\begin{equation}
+\begin{split}
+        \int_{-\infty}^{\infty}e^{-x_i^2}dx_i &= \pi^{\frac{1}{2}} \\
+    \prod_{i=1}^d\int_{-\infty}^{\infty}e^{-x_i^2}dx_i&= \pi^{\frac{d}{2}}
+    \end{split} 
+\end{equation}
+For the RHS, by enforcing $u=r^2$
+\begin{equation}
+    \begin{split}
+        s_d\int_0^{\infty}e^{-r^2}r^{d-1}dr &= s_d \int_0^{\infty} u^{\frac{d}{2}-1}e^{-u}d\sqrt{u}\\
+        &=\frac{s_d}{2}\int_0^{\infty} u^{\frac{d}{2}-1}e^{-u}du\\
+        &=\frac{s_d}{2}\Gamma(\frac{d}{2})
+    \end{split}
+\end{equation}
+Since LHS should be equal to RHS,
+\begin{equation}
+\begin{split}
+\pi^{\frac{d}{2}} = \frac{s_d}{2}\Gamma(\frac{d}{2})\\
+s_d = \frac{2\pi^{\frac{d}{2}}}{\Gamma(\frac{d}{2})}
+\end{split}
+\end{equation}
+For $d=2$,
+\begin{equation}
+    \begin{split}
+        S_2 &=\frac{2\pi^{2/2}}{\Gamma(\frac{2}{2})} \\
+            &= \frac{2\pi}{\Gamma(1)} \\
+            &= 2\pi
+    \end{split}
+\end{equation}
+For $d=3$,
+\begin{equation}
+    \begin{split}
+        S_3 & = \frac{\pi^{3/2}}{\Gamma(\frac{3}{2})}\\
+            & = \frac{2\pi^{\frac{3}{2}}}{\frac{\sqrt{\pi}}{2}} \\
+            & = 4\pi
+    \end{split}
+\end{equation}
+The results reduces to the common expression of circle and sphere when $r=1$.
+\subsection{Exercise 1.2}
+Since the relationship between Volume V and Surface S for a sphere with arbitrary radius a is $$\frac{dV}{da}=S$$
+Therefore the volume of a hypersphere of radius a in d-dimension should be
+\begin{equation}
+V_d = \int Sda = \int S_da^{d-1}da = \frac{s_d}{d}a^d
+\end{equation}
+Therefore, the volume of hypersphere over the volume of cube will be represented as
+\begin{equation}
+\begin{split}
+\frac{V_d}{V_c} = \frac{\frac{S_da^{d}}{d}}{(2a)^d}=\frac{S_d}{2^dd}=\frac{2\pi^{d/2}}{2^d d\Gamma(d/2)} = \frac{\pi^{d/2}}{d2^{d-1}\Gamma(d/2)}
+\end{split}
+\end{equation}
+Further, we can transform it into the following format, which is
+\begin{equation}
+\frac{V_d}{V_c} = \frac{\pi^{d/2}}{d2^{d-1}\Gamma(d/2)} = \frac{d}{2}(\frac{\pi}{4})^\frac{d}{2}\frac{1}{\Gamma(\frac{d}{2})}
+\end{equation}
+When $d\rightarrow \infty$, it's easy to find that all the terms in equation (6) converges to zero, so the whole expression converges to zero.
+In addition, the ratio of distance from the center to one corner over the distance to one side can be represented in the following,
+\begin{equation}
+\frac{center\;to\;one\;corner}{center\;to\;one\;side} = \frac{\sqrt{d\times a^2}}{a} = \sqrt{d}
+\end{equation}
+When $d$ goes larger to $\infty$, the ratio goes to $\infty$.
+
+\subsection{Exercise 1.3}
+According to the definition of fraction $f$, it can be represented as following
+\begin{equation}
+    \begin{split}
+     	f & = 1 - \frac{V_{a-\epsilon}}{V_a}  \\
+  	      & = 1 - \frac{{(a-\epsilon)}^{d}}{a^d}\\
+	      & =1 - (1-\frac{\epsilon}{a})^d
+    \end{split}
+\end{equation}
+And further, when $d \to \infty$
+\begin{equation}
+    \begin{split}
+     	\lim\limits_{d \to \infty}^{} f & =  \lim\limits_{d \to \infty}^{}  1 - (1-\frac{\epsilon}{a})^d \\
+	& = 1 - 0 \\
+	& = 1
+    \end{split}
+\end{equation}
+\textbf{Evaluations:}\\
+Given $\epsilon / a = 0.01$,
+\begin{equation}
+    \begin{split}
+        f_{d=2} &= 1 - 0.99^2 = 0.0199 \\
+        f_{d=10} &= 1 - 0.99^{10} = 0.0956 \\
+        f_{d=1000} &= 1 - 0.99^{1000} = 0.99996 \\
+    \end{split}
+\end{equation}
+When evaluating the fraction lying inside the radius a/2, it means $\epsilon=\frac{a}{2}$ either, which means $\frac{\epsilon}{a}=\frac{1}{2}$
+\begin{equation}
+    \begin{split}
+        1- f_{d=2} &= 0.5^2 = 0.25 \\
+        1- f_{d=10} &= 0.5^{10} = 0.000977 \\
+        1- f_{d=1000}& = 0.5^{1000} \approx 0.00000 \\
+    \end{split}
+\end{equation}
+
+\subsection{Exercise 1.4}
+Given the probabilistic density function, the probabilistic mass can be deduced by computing the integral of $p(x)$ over x in the thin shell. Besides, since the shell is so tiny that we can consider the density as a constant.
+\begin{equation}
+\begin{split}
+\int_{shell} p(x)dx &= p(x)\int_{shell}dx \\
+&= p(x)V_{shell}\\
+&=\frac{1}{(2\pi\sigma^2)^{1/2}}exp(-\frac{\Vert x\Vert^2}{2\sigma^2})s_{d}r^{d-1}\epsilon\\
+&=\frac{s_{d}r^{d-1}}{(2\pi\sigma^2)^{1/2}}exp(-\frac{\Vert x\Vert^2}{2\sigma^2})\epsilon\\
+&=\frac{s_{d}r^{d-1}}{(2\pi\sigma^2)^{1/2}}exp(-\frac{r^2}{2\sigma^2})\epsilon
+\end{split}
+\end{equation}
+
+Since we want to represent the equation into format $\rho(r)\epsilon$, so $\rho(r)$ would be
+\begin{equation}
+    \begin{split}
+    \frac{s_{d}r^{d-1}}{(2\pi\sigma^2)^{1/2}}exp(-\frac{r^2}{2\sigma^2})
+    \end{split}
+\end{equation}
+
+Further, we can compute the derivative of equation (13) with respect to variable r
+\begin{equation}
+    \begin{split}
+    \frac{d\rho(r)}{d r} &= (d-1)\frac{s_d}{(2\pi\sigma^2)^{\frac{d}{2}}}r^{d-2}exp(-\frac{r^2}{2\sigma^2})-(\frac{r}{\sigma^2}exp(-\frac{r^2}{2\sigma^2})\frac{s_d r^{d-1}}{(2\pi\sigma^2)^{\frac{d}{2}}})\\
+    &=\frac{s_d r^{d-2}}{(2\pi\sigma^2)^{\frac{d}{2}}}(d-1-\frac{r^2}{\sigma^2})exp(-\frac{r^2}{2\sigma^2})
+    \end{split}
+    \label{equation: gradient}
+\end{equation}
+Enforcing equation (\ref{equation: gradient}) to be 0, we can obtain the root
+\begin{equation}
+\begin{split}
+    \hat{r} = \sqrt{d-1}\sigma
+\end{split}
+\end{equation}
+When r is greater than $\hat{r}$, the derivative will be greater than 0 and when r is smaller than $\hat{r}$, the derivative will be smaller than 0, therefore, $\hat{r}$ will be the only maximum point.
+Since dimension $d$ is much larger than 1, therefore $\hat{r}=\sqrt{d}\sigma$ when d is extremely large.
+\par
+According to equation (1.50), we can deduce the equation in the following
+\begin{equation}
+\begin{split}
+    \frac{\rho(\hat{r}+\epsilon)}{\rho(\hat{r})}
+    & = \frac{\frac{s_{d}(\hat{r}+\epsilon)^{d-1}}{(2\pi\sigma^2)^{1/2}}exp(-\frac{(\hat{r}+\epsilon)^2}{2\sigma^2})}{\frac{s_{d}r^{d-1}}{(2\pi\sigma^2)^{1/2}}exp(-\frac{r^2}{2\sigma^2})} \\
+    &= \frac{(\hat{r}+\epsilon)^{d-1}}{\hat{r}^{d-1}}\frac{exp(-\frac{(\hat{r}+\epsilon)^2}{2\sigma^2})}{exp(-\frac{\hat{r}^2}{2\sigma^2})} \\
+    &=(1+\frac{\epsilon}{\hat{r}})^{d-1}exp(-\frac{2\epsilon\hat{r}+\epsilon^2}{2\sigma^2})\\
+    &=exp(-\frac{2\epsilon\hat{r}+\epsilon^2}{2\sigma^2}+(d-1)ln(1+\frac{\epsilon}{\hat{r}}))\\
+\end{split}
+\end{equation}
+Then expanding the term inside eponential by using Talyor expandation
+\begin{equation}
+    \begin{split}
+    -\frac{2\epsilon\hat{r}+\epsilon^2}{2\sigma^2}+(d-1)ln(1+\frac{\epsilon}{\hat{r}})&\approx-\frac{2\epsilon\hat{r}+\epsilon^2}{2\sigma^2}+(d-1)(\frac{\epsilon}{\hat{r}}-\frac{\epsilon^2}{2\hat{r}})\\
+    &=-\frac{2\epsilon\hat{r}+\epsilon^2}{2\sigma^2}+\frac{2\hat{r}\epsilon-\epsilon^2}{2\sigma^2}\\
+    &=-\frac{\epsilon^2}{\sigma^2}
+    \end{split}
+\end{equation}
+Therefore,
+\begin{equation}
+    \rho(\hat{r}+\epsilon) = \rho(\hat{r})exp(-\frac{\epsilon^2}{\sigma^2})
+\end{equation}
+Therefore, for $\Vert x \Vert^2=0$, $\rho(x) = \frac{1}{(2\pi\sigma^2)^{\frac{1}{2}}}$, for $\Vert x \Vert^2=\sigma^2d$, $\rho(x) = \frac{1}{(2\pi\sigma^2)^{\frac{1}{2}}}e^{-\frac{d}{2}}$, therefore the probability density is $e^{\frac{d}{2}}$  bigger.
+\section{Logestic Regression}
+According to the equation of cost function is
+\begin{equation}
+E(x) = -\sum_{n=1}^N\{t^nln(y^n)+(1-t^n)ln(1-y^n)\}
+\end{equation}
+Therefore, the derivative of $E(x)$ is
+\begin{equation}
+\begin{split}
+-\frac{\partial E(x)}{\partial w_j} &= \sum_{n=1}^N\{\frac{t_n}{y^n}\cdot g^{'}(w^Tx)\cdot x_j^n - \frac{1-t^n}{1-y^n}\cdot g^{'}(w^Tx)\cdot x_j^n\}\\
+&=\sum_{n=1}^N\{\frac{t^n(1-y^n)-y^n(1-t^n)}{y^n(1-y^n)}g^{'}(w^Tx)x_j^n\}\\
+&=\sum_{n=1}^N\{\frac{t^n-y^n}{y^n(1-y^n)}g^{'}(w^Tx)x_j^n\}\\
+\end{split}
+\end{equation}
+Since logistic activation function is a sigmoid function, one property of the sigmoid function is
+\begin{equation}
+    g^{'}(x) = g(x)(1-g(x))
+\end{equation}
+Then the denominator of equation (10) can be canceled with $g^{'}(w^Tx)$, so the final format of $-\frac{\partial E(x)}{\partial w_j}$ can be transformed to 
+\begin{equation}
+-\frac{E(x)}{w_j} = \sum_{n=1}^N\{ (t^n-y^n)x_j^n\}
+\end{equation}
+\end{document}

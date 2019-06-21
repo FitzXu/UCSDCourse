@@ -1,0 +1,231 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/ucsddse230/work
+[NotebookApp | INFO] 0 active kernels
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://[all ip addresses on your system]:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] Writing notebook-signing key to /home/ucsddse230/.local/share/jupyter/notebook_secret
+[NotebookApp | WARNING] Notebook Section1-Spark-Basics/2.SparkSQL/1.SparkSQL.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: cd9fdb2e-4778-48ef-a64e-2dca1497c7d8
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190419185803 (172.17.0.1) 13.73ms referer=http://localhost:8889/notebooks/Section1-Spark-Basics/2.SparkSQL/1.SparkSQL.ipynb
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel cd9fdb2e-4778-48ef-a64e-2dca1497c7d8
+[NotebookApp | INFO] Saving file at /Section1-Spark-Basics/2.SparkSQL/1.SparkSQL.ipynb
+[NotebookApp | INFO] Saving file at /Section1-Spark-Basics/2.SparkSQL/1.SparkSQL.ipynb
+[NotebookApp | WARNING] Notebook Section1-Spark-Basics/2.SparkSQL/2.SparkSQLDataFrameOperations.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 5e2bd51f-f306-4f46-b17d-232c969c69fc
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190419185803 (172.17.0.1) 2.43ms referer=http://localhost:8889/notebooks/Section1-Spark-Basics/2.SparkSQL/2.SparkSQLDataFrameOperations.ipynb
+[NotebookApp | INFO] Starting buffering for cd9fdb2e-4778-48ef-a64e-2dca1497c7d8:e24a965d1c1f4c3db1754d270b22c1fa
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 5e2bd51f-f306-4f46-b17d-232c969c69fc
+[NotebookApp | INFO] Saving file at /Section1-Spark-Basics/2.SparkSQL/2.SparkSQLDataFrameOperations.ipynb
+[NotebookApp | WARNING] Notebook Section1-Spark-Basics/2.SparkSQL/2.SparkSQLDataFrameOperations.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section1-Spark-Basics/2.SparkSQL/2.SparkSQLDataFrameOperations.ipynb
+[NotebookApp | WARNING] Notebook Section1-Spark-Basics/2.SparkSQL/2.SparkSQLDataFrameOperations.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section1-Spark-Basics/2.SparkSQL/2.SparkSQLDataFrameOperations.ipynb
+[NotebookApp | WARNING] Notebook Section1-Spark-Basics/2.SparkSQL/2.SparkSQLDataFrameOperations.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section1-Spark-Basics/2.SparkSQL/2.SparkSQLDataFrameOperations.ipynb
+[NotebookApp | WARNING] Notebook Section1-Spark-Basics/2.SparkSQL/2.SparkSQLDataFrameOperations.ipynb is not trusted
+[NotebookApp | WARNING] Notebook Section1-Spark-Basics/2.SparkSQL/3.S3_HDFS_Parquet.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 22a1b0c7-5103-4e50-ad39-b47b005de47f
+[NotebookApp | INFO] 302 GET /notebooks/Section1-Spark-Basics/2.SparkSQL/Figures/AWS-EMR-S3.png (172.17.0.1) 7.36ms
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190419185803 (172.17.0.1) 3.04ms referer=http://localhost:8889/notebooks/Section1-Spark-Basics/2.SparkSQL/3.S3_HDFS_Parquet.ipynb
+[NotebookApp | INFO] Starting buffering for 5e2bd51f-f306-4f46-b17d-232c969c69fc:ef3e2b458ae440b59bd56d17c38d23c3
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 22a1b0c7-5103-4e50-ad39-b47b005de47f
+[NotebookApp | INFO] Saving file at /Section1-Spark-Basics/2.SparkSQL/3.S3_HDFS_Parquet.ipynb
+[NotebookApp | WARNING] Notebook Section1-Spark-Basics/2.SparkSQL/3.S3_HDFS_Parquet.ipynb is not trusted
+[NotebookApp | WARNING] Notebook Section1-Spark-Basics/2.SparkSQL/4.More on spark.sql.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 01c39393-8be2-4dca-8cf7-8f4e9e83e0d7
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190419185803 (172.17.0.1) 4.88ms referer=http://localhost:8889/notebooks/Section1-Spark-Basics/2.SparkSQL/4.More%20on%20spark.sql.ipynb
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 01c39393-8be2-4dca-8cf7-8f4e9e83e0d7
+[NotebookApp | INFO] Saving file at /Section1-Spark-Basics/2.SparkSQL/4.More on spark.sql.ipynb
+[NotebookApp | WARNING] Notebook Section1-Spark-Basics/1.BasicSpark/1. Spark Basics 1.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: b12808f9-d019-4eff-9564-8ade65a0186b
+[NotebookApp | INFO] 302 GET /notebooks/Section1-Spark-Basics/1.BasicSpark/Figures/SparkContextAndRDD.jpg (172.17.0.1) 6.32ms
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190419185803 (172.17.0.1) 3.77ms referer=http://localhost:8889/notebooks/Section1-Spark-Basics/1.BasicSpark/1.%20Spark%20Basics%201.ipynb
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel b12808f9-d019-4eff-9564-8ade65a0186b
+[NotebookApp | INFO] Saving file at /Section1-Spark-Basics/1.BasicSpark/1. Spark Basics 1.ipynb
+[NotebookApp | WARNING] Notebook Section1-Spark-Basics/1.BasicSpark/1. Spark Basics 1.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section1-Spark-Basics/2.SparkSQL/3.S3_HDFS_Parquet.ipynb
+[NotebookApp | WARNING] Notebook Section1-Spark-Basics/2.SparkSQL/3.S3_HDFS_Parquet.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section1-Spark-Basics/2.SparkSQL/3.S3_HDFS_Parquet.ipynb
+[NotebookApp | WARNING] Notebook Section1-Spark-Basics/2.SparkSQL/3.S3_HDFS_Parquet.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section1-Spark-Basics/2.SparkSQL/3.S3_HDFS_Parquet.ipynb
+[NotebookApp | WARNING] Notebook Section1-Spark-Basics/2.SparkSQL/3.S3_HDFS_Parquet.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section1-Spark-Basics/2.SparkSQL/3.S3_HDFS_Parquet.ipynb
+[NotebookApp | WARNING] Notebook Section1-Spark-Basics/2.SparkSQL/3.S3_HDFS_Parquet.ipynb is not trusted
+[NotebookApp | INFO] Starting buffering for b12808f9-d019-4eff-9564-8ade65a0186b:aa20bd5eec924dde8b576b63836ec479
+[NotebookApp | INFO] Starting buffering for 01c39393-8be2-4dca-8cf7-8f4e9e83e0d7:3ef8fcfb76324e9390624c8a81ed412a
+[NotebookApp | INFO] Starting buffering for 22a1b0c7-5103-4e50-ad39-b47b005de47f:4d50bf0cf0d9461e88db3cc8cb7521e6
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/ucsddse230/work
+[NotebookApp | INFO] 0 active kernels
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://[all ip addresses on your system]:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] 302 GET / (172.17.0.1) 0.68ms
+[NotebookApp | INFO] Writing notebook-signing key to /home/ucsddse230/.local/share/jupyter/notebook_secret
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4. Weather Analysis - reconstruction SNWD.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 47ccaf64-e851-41f7-b47d-0d8e5ac353cd
+[NotebookApp | INFO] 302 GET /notebooks/Section2-Weather-PCA_PART2/Figures/MeanStdSNWD_NY.png (172.17.0.1) 9.31ms
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190504172756 (172.17.0.1) 13.26ms referer=http://localhost:8889/notebooks/Section2-Weather-PCA_PART2/4.%20Weather%20Analysis%20-%20reconstruction%20SNWD.ipynb
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 47ccaf64-e851-41f7-b47d-0d8e5ac353cd
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4. Weather Analysis - reconstruction SNWD.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4. Weather Analysis - reconstruction SNWD.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4. Weather Analysis - reconstruction SNWD.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4. Weather Analysis - reconstruction SNWD.ipynb is not trusted
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190504172756 (172.17.0.1) 1.81ms referer=http://localhost:8889/notebooks/Section2-Weather-PCA_PART2/4a.%20Weather%20Analysis%20-%20reconstruction%20PRCP-Smoothed.ipynb
+[NotebookApp | INFO] Kernel started: b3f42a0b-16aa-4f1f-958a-e5d8bfd46573
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel b3f42a0b-16aa-4f1f-958a-e5d8bfd46573
+[NotebookApp | INFO] Starting buffering for 47ccaf64-e851-41f7-b47d-0d8e5ac353cd:c48213e343ac42008add7cc15a083341
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/lib/getFiles.py
+[NotebookApp | INFO] Starting buffering for b3f42a0b-16aa-4f1f-958a-e5d8bfd46573:50d73df62680410aa6e3eacbf7b02654
+[NotebookApp | INFO] Kernel restarted: b3f42a0b-16aa-4f1f-958a-e5d8bfd46573
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel b3f42a0b-16aa-4f1f-958a-e5d8bfd46573
+[NotebookApp | INFO] Restoring connection for b3f42a0b-16aa-4f1f-958a-e5d8bfd46573:50d73df62680410aa6e3eacbf7b02654
+[NotebookApp | INFO] Replaying 6 buffered messages
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/5. maps using iPyLeaflet.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 057643a3-9d2f-4a98-bc8e-7c8bb791ee86
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190504172756 (172.17.0.1) 6.20ms referer=http://localhost:8889/notebooks/Section2-Weather-PCA_PART2/5.%20maps%20using%20iPyLeaflet.ipynb
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 057643a3-9d2f-4a98-bc8e-7c8bb791ee86
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/5. maps using iPyLeaflet.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/5. maps using iPyLeaflet.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | INFO] Starting buffering for b3f42a0b-16aa-4f1f-958a-e5d8bfd46573:50d73df62680410aa6e3eacbf7b02654
+[NotebookApp | INFO] Starting buffering for 057643a3-9d2f-4a98-bc8e-7c8bb791ee86:c0d021d482f2457084e5d9184768cb65
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/ucsddse230/work
+[NotebookApp | INFO] 0 active kernels
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://[all ip addresses on your system]:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] Writing notebook-signing key to /home/ucsddse230/.local/share/jupyter/notebook_secret
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 2fef6c83-5ad3-4abc-9ac1-4c040482582c
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190506214248 (172.17.0.1) 14.44ms referer=http://localhost:8889/notebooks/Section2-Weather-PCA_PART2/4a.%20Weather%20Analysis%20-%20reconstruction%20PRCP-Smoothed.ipynb
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 2fef6c83-5ad3-4abc-9ac1-4c040482582c
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | INFO] Starting buffering for 2fef6c83-5ad3-4abc-9ac1-4c040482582c:1c87170447b84eea8f9bb14317ce3f33
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190506214248 (172.17.0.1) 1.54ms referer=http://localhost:8889/notebooks/Section2-Weather-PCA_PART2/4a.%20Weather%20Analysis%20-%20reconstruction%20PRCP-Smoothed.ipynb
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 2fef6c83-5ad3-4abc-9ac1-4c040482582c
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/5. maps using iPyLeaflet.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: f2f29c9c-e7fd-4b90-a043-0e03b627ce53
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190506214248 (172.17.0.1) 2.69ms referer=http://localhost:8889/notebooks/Section2-Weather-PCA_PART2/5.%20maps%20using%20iPyLeaflet.ipynb
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel f2f29c9c-e7fd-4b90-a043-0e03b627ce53
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/5. maps using iPyLeaflet.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/5. maps using iPyLeaflet.ipynb is not trusted
+[NotebookApp | INFO] Starting buffering for 2fef6c83-5ad3-4abc-9ac1-4c040482582c:d7b433e48c05495e84c26529d817907e
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 2fef6c83-5ad3-4abc-9ac1-4c040482582c
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190506214248 (172.17.0.1) 3.76ms referer=http://localhost:8889/notebooks/Section2-Weather-PCA_PART2/4a.%20Weather%20Analysis%20-%20reconstruction%20PRCP-Smoothed.ipynb
+[NotebookApp | INFO] Starting buffering for f2f29c9c-e7fd-4b90-a043-0e03b627ce53:44a443123f9d4d28b45656f2d7d3684f
+[NotebookApp | INFO] Starting buffering for 2fef6c83-5ad3-4abc-9ac1-4c040482582c:094ed7047a654cdf987c3675c5079edc
+[NotebookApp | INFO] Kernel restarted: 2fef6c83-5ad3-4abc-9ac1-4c040482582c
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 2fef6c83-5ad3-4abc-9ac1-4c040482582c
+[NotebookApp | INFO] Restoring connection for 2fef6c83-5ad3-4abc-9ac1-4c040482582c:094ed7047a654cdf987c3675c5079edc
+[NotebookApp | INFO] Replaying 6 buffered messages
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/5. maps using iPyLeaflet.ipynb is not trusted
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel f2f29c9c-e7fd-4b90-a043-0e03b627ce53
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190506214248 (172.17.0.1) 1.85ms referer=http://localhost:8889/notebooks/Section2-Weather-PCA_PART2/5.%20maps%20using%20iPyLeaflet.ipynb
+[NotebookApp | INFO] Starting buffering for 2fef6c83-5ad3-4abc-9ac1-4c040482582c:094ed7047a654cdf987c3675c5079edc
+[NotebookApp | INFO] Starting buffering for f2f29c9c-e7fd-4b90-a043-0e03b627ce53:62fd2c395a60481ca05f3f71e6c8d81f
+[NotebookApp | INFO] Kernel restarted: f2f29c9c-e7fd-4b90-a043-0e03b627ce53
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel f2f29c9c-e7fd-4b90-a043-0e03b627ce53
+[NotebookApp | INFO] Restoring connection for f2f29c9c-e7fd-4b90-a043-0e03b627ce53:62fd2c395a60481ca05f3f71e6c8d81f
+[NotebookApp | INFO] Replaying 6 buffered messages
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/5. maps using iPyLeaflet.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/5. maps using iPyLeaflet.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/5. maps using iPyLeaflet.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/6. Is SNWD variation spatial or temporal.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 8afcf514-8ba4-4195-8d1b-48d59344828a
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190506214248 (172.17.0.1) 8.45ms referer=http://localhost:8889/notebooks/Section2-Weather-PCA_PART2/6.%20Is%20SNWD%20variation%20spatial%20or%20temporal.ipynb
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 8afcf514-8ba4-4195-8d1b-48d59344828a
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/6. Is SNWD variation spatial or temporal.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/6. Is SNWD variation spatial or temporal.ipynb is not trusted
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/7.Smoothing.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 03856138-6440-4320-a9d0-a45507f41735
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190506214248 (172.17.0.1) 2.70ms referer=http://localhost:8889/notebooks/Section2-Weather-PCA_PART2/7.Smoothing.ipynb
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 03856138-6440-4320-a9d0-a45507f41735
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/6. Is SNWD variation spatial or temporal.ipynb
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/7.Smoothing.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/7.Smoothing.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/6. Is SNWD variation spatial or temporal.ipynb
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/6. Is SNWD variation spatial or temporal.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 2fef6c83-5ad3-4abc-9ac1-4c040482582c
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190506214248 (172.17.0.1) 3.41ms referer=http://localhost:8889/notebooks/Section2-Weather-PCA_PART2/4a.%20Weather%20Analysis%20-%20reconstruction%20PRCP-Smoothed.ipynb
+[NotebookApp | INFO] Starting buffering for 03856138-6440-4320-a9d0-a45507f41735:7af938285e4544c0beb61a02a9f16c5e
+[NotebookApp | INFO] Starting buffering for 8afcf514-8ba4-4195-8d1b-48d59344828a:fe9b19c569974d7688ac41a25b46cb2e
+[NotebookApp | INFO] Starting buffering for f2f29c9c-e7fd-4b90-a043-0e03b627ce53:62fd2c395a60481ca05f3f71e6c8d81f
+[NotebookApp | INFO] Starting buffering for 2fef6c83-5ad3-4abc-9ac1-4c040482582c:6f72540600cd4a2a85f7322ebdc544ae
+[NotebookApp | INFO] Kernel restarted: 2fef6c83-5ad3-4abc-9ac1-4c040482582c
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 2fef6c83-5ad3-4abc-9ac1-4c040482582c
+[NotebookApp | INFO] Restoring connection for 2fef6c83-5ad3-4abc-9ac1-4c040482582c:6f72540600cd4a2a85f7322ebdc544ae
+[NotebookApp | INFO] Replaying 6 buffered messages
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel f2f29c9c-e7fd-4b90-a043-0e03b627ce53
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190506214248 (172.17.0.1) 2.59ms referer=http://localhost:8889/notebooks/Section2-Weather-PCA_PART2/5.%20maps%20using%20iPyLeaflet.ipynb
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/5. maps using iPyLeaflet.ipynb
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/5. maps using iPyLeaflet.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/0. README.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 4950041f-6c8d-4b1e-a5a9-039c02aea953
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190506214248 (172.17.0.1) 4.04ms referer=http://localhost:8889/notebooks/Section2-Weather-PCA_PART2/0.%20README.ipynb
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 4950041f-6c8d-4b1e-a5a9-039c02aea953
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 8afcf514-8ba4-4195-8d1b-48d59344828a
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190506214248 (172.17.0.1) 2.87ms referer=http://localhost:8889/notebooks/Section2-Weather-PCA_PART2/6.%20Is%20SNWD%20variation%20spatial%20or%20temporal.ipynb
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/0. README.ipynb
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/6. Is SNWD variation spatial or temporal.ipynb
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/6. Is SNWD variation spatial or temporal.ipynb
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/6. Is SNWD variation spatial or temporal.ipynb
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/6. Is SNWD variation spatial or temporal.ipynb
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/6. Is SNWD variation spatial or temporal.ipynb
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/5. maps using iPyLeaflet.ipynb
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/5. maps using iPyLeaflet.ipynb
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/5. maps using iPyLeaflet.ipynb
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/5. maps using iPyLeaflet.ipynb
+[NotebookApp | INFO] Starting buffering for 8afcf514-8ba4-4195-8d1b-48d59344828a:dd5e330860e54417831b35aff7853fd4
+[NotebookApp | INFO] Starting buffering for 4950041f-6c8d-4b1e-a5a9-039c02aea953:626e3fb159e041cb94cfbb06ebc9f1fd
+[NotebookApp | INFO] Starting buffering for f2f29c9c-e7fd-4b90-a043-0e03b627ce53:b4f0b049b9284aa0870a011604ebb1db
+[NotebookApp | INFO] Starting buffering for 2fef6c83-5ad3-4abc-9ac1-4c040482582c:6f72540600cd4a2a85f7322ebdc544ae
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 2fef6c83-5ad3-4abc-9ac1-4c040482582c
+[NotebookApp | WARNING] 404 GET /static/components/bootstrap/js/tooltip.js?v=20190506214248 (172.17.0.1) 6.70ms referer=http://localhost:8889/notebooks/Section2-Weather-PCA_PART2/4a.%20Weather%20Analysis%20-%20reconstruction%20PRCP-Smoothed.ipynb
+[NotebookApp | INFO] Saving file at /Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb
+[NotebookApp | WARNING] Notebook Section2-Weather-PCA_PART2/4a. Weather Analysis - reconstruction PRCP-Smoothed.ipynb is not trusted
+[NotebookApp | WARNING] zmq message arrived on closed channel
+[NotebookApp | WARNING] zmq message arrived on closed channel
+[NotebookApp | INFO] Starting buffering for 2fef6c83-5ad3-4abc-9ac1-4c040482582c:dbaf963eefca42479f29cbf9dae3a800
